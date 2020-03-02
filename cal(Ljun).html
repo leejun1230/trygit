@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+
+<body>
+
+    <div class="main">
+     
+     
+        <form name="myForm">
+            <input type="text" name="textview" class = "textview" disabled> 
+        </form>
+        <table>
+            <tr>
+                 <td><input type ="button" class="button blue" value="C" onclick="clean()"></td>
+                 <td><input type ="button" class="button blue" value="÷" onclick="insertOp('÷')" ></td>
+                 <td><input type ="button" class="button blue" value="x" onclick="insertOp('*')"></td>
+                 <td><input type ="button" class="button blue" value="⌫" onclick="back()"></td>
+            </tr>
+    
+            <tr>
+                <td><input type ="button" class="button gray" value="7" onclick="insertNum(7)"></td>
+                 <td><input type ="button" class="button gray" value="8" onclick="insertNum(8)"></td>
+                 <td><input type ="button" class="button gray" value="9" onclick = "insertNum(9)"></td>
+                 <td><input type ="button" class="button blue" value="-" onclick="insertOp('-')" ></td>
+            </tr>
+     
+            <tr>
+                <td><input type ="button" class="button gray" value="4" onclick = "insertNum(4)"></td>
+                 <td><input type ="button" class="button gray" value="5" onclick = "insertNum(5)"></td>
+                 <td><input type ="button" class="button gray" value="6" onclick = "insertNum(6)"></td>
+                 <td><input type ="button" class="button blue" value="+" onclick="insertOp('+')"></td>
+            </tr>
+    
+            <tr>
+                <td><input type ="button" class="button gray" value="1"onclick = "insertNum(1)"></td>
+                 <td><input type ="button" class="button gray" value="2" onclick = "insertNum(2)"></td>
+                 <td><input type ="button" class="button gray" value="3" onclick= "insertNum(3)"></td>
+                 <td rowspan="5px"><input type ="button" style="height:123px" class="button blue" value="=" onclick="equalTo()"></td>
+            </tr>                             
+      
+            <tr>
+                <td><input type ="button" class="button gray" value="0" onclick="insertNum(0)"></td>
+                 <td><input type ="button" class="button blue" value="%"></td>
+                 <td><input type ="button" class="button blue" value="." onclick="insertDec()"></td>
+            </tr>    
+            
+        </table>
+
+
+        
+    
+    </div>
+    <script type="text/javascript" src='cal1.js'></script>
+</body>
+</html>
